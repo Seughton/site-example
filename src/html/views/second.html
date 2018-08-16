@@ -1,0 +1,8 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Seughton"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!--second page-->
+<%= _.template(require('./../includes/footer.html'))(data) %>

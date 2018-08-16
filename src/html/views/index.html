@@ -1,0 +1,91 @@
+<% var data = {
+  title: "website",
+  author: "Seughton"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!--BODY-->
+<main>
+  <aside class="left-sidebar">
+    <nav class="sidebar__navigation">
+      <ul class="navigation__list">
+        <a href="#" class="navigation__list-item"> <li>Главное меню</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Сайт Исполкома СНГ</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Направление сотрудничества</li> </a>
+        <a href="#" class="navigation__list-item"> <li>О Содружестве</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Органы СНГ</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Выборы и референдумы</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Информагентства стран СНГ</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Наши партнеры</li> </a>
+        <a href="#" class="navigation__list-item"> <li>Контакты</li> </a>
+      </ul>
+    </nav>
+  </aside>
+  <section class="main__section">
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>НОВОСТИ СНГ</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+    </section>
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>АНОНСЫ СОБЫТИЙ СНГ</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+    </section>
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>АНАЛИТИКА И КОММЕНТАРИИ</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+    </section>
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>В СТРАНАХ СОДРУЖЕСТВА</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet."></a>
+    </section>
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>СОДРУЖЕСТВО ИНТЕГРАЦИЙ</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+    </section>
+    <section class="main__section-item">
+      <div class="main__section-item_photo"></div><hr>
+      <h2>ИННОВАЦИИ И НАУКА</h2>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+      <a href="#" data-hover="Lorem ipsum dolor sit amet, consectetur."></a>
+    </section>
+  </section>
+  <aside class="right-sidebar">
+
+  </aside>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

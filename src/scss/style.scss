@@ -1,0 +1,219 @@
+$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
+
+
+/*
+@import "~bootstrap/scss/bootstrap";
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+*, *:before, *:after { box-sizing: border-box; }
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/ color: black;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  padding: 0 30px;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: radial-gradient(#4CCEB2, #2F8FD8) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-bottom: 10px;
+  -webkit-border-radius: 8px 8px 0 0 ;
+  -moz-border-radius: 8px 8px 0 0 ;
+  border-radius: 8px 8px 0 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+aside {background: rgba(0, 27, 255, 0.42);}
+
+.left-sidebar {
+  padding: 20px 15px;
+  width: calc(100% / 12 * 2 /*- 32px*/);
+  /*margin: 0 16px;*/
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  /*padding-left: 10px;*/
+}
+
+.navigation__list-item {
+ /* margin: 10px 0;*/
+  padding: 10px 0;
+}
+.navigation__list-item li {
+/*  padding: 0 0 0 25px;*/
+  margin: 0 0 0 30px;
+}
+.navigation__list-item:hover {
+  background: rgba(41, 220, 238, 0.29);
+}
+section {
+  width: calc(100% / 12 * 8 /*- 32px*/);
+  /*margin: 0 16px;*/
+}
+.right-sidebar {
+  width: calc(100% / 12 * 2 /*- 32px*/);
+  /*margin: 0 16px;*/
+}
+
+.main__section{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.main__section-item {
+  padding: 10px 5px;
+  margin: 0 10px 10px 10px;
+  border: 0.5px solid #3EB0C3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius:5px ;
+  border-radius: 5px;
+  font-size: 18px;
+  width: calc(100% / 12 * 6 - 20px);
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Оформление ссылок*/
+.main__section-item a {
+
+  padding: 5px 0 0 25px;
+  display: inline-block;
+
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.main__section-item a::before {
+  color: #000000;
+  content: attr(data-hover);
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.main__section-item a:hover::before,
+.main__section-item a:focus::before {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  color: rgba(62, 176, 196, 1);
+
+}
+/*!оформление ссылки*/
+
+
+.main__section-item h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.main__section-item_photo {
+  height: 100px;
+  width: 100%;
+  background-image: url(/dist/uploads/examplephoto.jpg);
+  background-repeat     : no-repeat;
+  background-size       : cover;
+  background-position-x : 50%;
+  background-position-y : 50%;
+
+}
+
+/*Форма поиска*/
+
+/*!Форма поиска*/
+
+footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(#4CCEB2, #2F8FD8) no-repeat center center fixed;
+
+}
+
+.footer__information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 12 * 3) ;
+  text-align: center;
+
+}
+.footer__contacts_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer__contacts_list li a:hover {
+  color: #c33219;
+}
+.footer__contacts_list li .fa-google:hover {
+  color: #e64522;
+  color: -moz-linear-gradient(#c33219, #e64522);
+  color: -ms-linear-gradient(#c33219, #e64522);
+  color: -webkit-linear-gradient(#c33219, #e64522);
+}
+
+
+/*Кнопка вверх*/
+#toTop {
+  width:100px;
+  border:1px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:10px; /* отступ кнопки от нижнего края страницы*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  color:#333;
+  font-family:verdana;
+  font-size:11px;
+}
+/*!Кнопка вверх*/
